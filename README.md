@@ -28,4 +28,7 @@ position = Unidom::Position::Position.valid_at.alive.first
 occupation = Unidom::Position::Occupation.valid_at.alive.first
 
 post = Unidom::Position::Post.valid_at.alive.first
+
+Unidom::Position::PostReportingStructure.report!(superior_post, inferior_post)
+
 ```
