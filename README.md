@@ -23,12 +23,16 @@ The migration versions start with 200101.
 
 ## Call the Model
 ```ruby
-position = Unidom::Position::Position.valid_at.alive.first
 
 occupation = Unidom::Position::Occupation.valid_at.alive.first
 
+position = Unidom::Position::Position.valid_at.alive.first
+
 post = Unidom::Position::Post.valid_at.alive.first
 
-Unidom::Position::PostReportingStructure.report!(superior_post, inferior_post)
+chief_programmer = Unidom::Position::Post.create! name: 'Chief Programmer', position: position
+erlang_developer = Unidom::Position::Post.create! name: 'Erlang Developer', position: position
+
+Unidom::Position::PostReportingStructure.report!(superior_post: chief_programmer, inferior_post: erlang_developer, opened_at: Time.now, elemental: true)
 
 ```
