@@ -36,3 +36,8 @@ erlang_developer = Unidom::Position::Post.create! name: 'Erlang Developer', posi
 Unidom::Position::PostReportingStructure.report!(superior_post: chief_programmer, inferior_post: erlang_developer, opened_at: Time.now, elemental: true)
 
 ```
+
+## Rake Task
+```shell
+bundle exec rake unidom:position:occupation:import file=/data.csv from_date=2009-11-01 thru_date=2015-10-01 scheme_id= scheme_type=
+```

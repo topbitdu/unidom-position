@@ -12,3 +12,9 @@
 
 ## v1.0
 1. Improve the models to support the Keyword Arguments
+
+## v1.1
+1. Rake task unidom:position:occupation:import
+
+## v1.2
+1. Reporting concern

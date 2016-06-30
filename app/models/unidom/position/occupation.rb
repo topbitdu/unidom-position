@@ -13,4 +13,8 @@ class Unidom::Position::Occupation < ActiveRecord::Base
   has_many :positions, class_name: 'Unidom::Position::Position'
   has_many :posts,     through:    :positions, source: :posts
 
+  scope :scheme_is,      ->(scheme)      { where scheme:      scheme      }
+  scope :scheme_id_is,   ->(scheme_id)   { where scheme_id:   scheme_id   }
+  scope :scheme_type_is, ->(scheme_type) { where scheme_type: scheme_type }
+
 end
