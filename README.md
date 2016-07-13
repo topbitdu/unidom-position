@@ -19,7 +19,7 @@ gem 'unidom-position'
 ```shell
 rake db:migrate
 ```
-The migration versions start with 200101.
+The migration versions start with 200402.
 
 ## Call the Model
 ```ruby
