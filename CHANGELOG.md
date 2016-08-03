@@ -15,3 +15,9 @@
 
 ## v1.1
 1. Rake task unidom:position:occupation:import
+2. Improved the Occupation model to add the #scheme_is, #scheme_id_is, & #scheme_type_is scopes
+
+## v1.2
+1. As Superior Post concern
+2. As Inferior Post concern
+3. Improved the Post model to include the As Superior Post concern & the As Inferior Post concern

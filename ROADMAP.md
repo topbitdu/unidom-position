@@ -18,4 +18,10 @@
 2. Improve the Occupation model to add the #scheme_is, #scheme_id_is, & #scheme_type_is scopes
 
 ## v1.2
-1. Reporting concern
+1. As Superior Post concern
+2. As Inferior Post concern
+3. Improve the Post model to include the As Superior Post concern & the As Inferior Post concern
+
+## v1.3
+1. Improve the As Superior Post concern to add the #is_reported_to! method
+2. Improve the As Inferior Post concern to add the #report_to! method

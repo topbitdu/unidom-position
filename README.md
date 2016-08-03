@@ -41,3 +41,20 @@ Unidom::Position::PostReportingStructure.report!(superior_post: chief_programmer
 ```shell
 bundle exec rake unidom:position:occupation:import file=/data.csv from_date=2009-11-01 thru_date=2015-10-01 scheme_id= scheme_type=
 ```
+
+## Include the Concerns
+The Post model already includes the following concerns:
+```ruby
+include Unidom::Position::Concerns::AsInferiorPost
+include Unidom::Position::Concerns::AsSuperiorPost
+```
+
+### As Inferior Post
+The As Inferior Post concern do the following tasks for the includer automatically:  
+1. Define the has_many :superior_post_reporting_structures macro as: ``has_many :superior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :inferior_post, foreign_key: :inferior_post_id``  
+2. Define the has_many :superior_posts macro as: ``has_many :superior_posts, through: :superior_post_reporting_structures, source: :superior_post``  
+
+### As Superior Post
+The As Superior Post concern do the following tasks for the includer automatically:  
+1. Define the has_many :inferior_post_reporting_structures macro as: ``has_many :inferior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :superior_post, foreign_key: :superior_post_id``  
+2. Define the has_many :inferior_posts macro as: ``has_many :inferior_posts, through: :inferior_post_reporting_structures, source: :inferior_post``  
