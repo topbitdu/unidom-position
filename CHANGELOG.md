@@ -21,3 +21,6 @@
 1. As Superior Post concern
 2. As Inferior Post concern
 3. Improved the Post model to include the As Superior Post concern & the As Inferior Post concern
+
+## v1.2.1
+1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0

@@ -22,6 +22,9 @@
 2. As Inferior Post concern
 3. Improve the Post model to include the As Superior Post concern & the As Inferior Post concern
 
+## v1.2.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
+
 ## v1.3
 1. Improve the As Superior Post concern to add the #is_reported_to! method
 2. Improve the As Inferior Post concern to add the #report_to! method
