@@ -2,10 +2,14 @@ module Unidom::Position::Concerns::AsSuperiorPost
 
   extend ActiveSupport::Concern
 
-  self.included do |includer|
+  included do |includer|
 
     has_many :inferior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :superior_post, foreign_key: :superior_post_id
     has_many :inferior_posts,                     through:    :inferior_post_reporting_structures,        source: :inferior_post
+
+    def is_reported_to!(by: nil, at: Time.now, primary: false)
+      inferior_post_reporting_structures.create! inferior_post: by, elemental: primary, opened_at: at
+    end
 
   end
 
