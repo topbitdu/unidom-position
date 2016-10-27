@@ -1,6 +1,6 @@
 # Occupation 是职业。
 
-class Unidom::Position::Occupation < ActiveRecord::Base
+class Unidom::Position::Occupation < Unidom::Position::ApplicationRecord
 
   self.table_name = 'unidom_occupations'
 
