@@ -1,6 +1,6 @@
 # Position 是职位。
 
-class Unidom::Position::Position < ActiveRecord::Base
+class Unidom::Position::Position < Unidom::Position::ApplicationRecord
 
   self.table_name = 'unidom_positions'
 
