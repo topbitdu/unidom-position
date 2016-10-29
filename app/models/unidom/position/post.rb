@@ -1,6 +1,6 @@
 # Post 是岗位。
 
-class Unidom::Position::Post < ActiveRecord::Base
+class Unidom::Position::Post < Unidom::Position::ApplicationRecord
 
   self.table_name = 'unidom_posts'
 
