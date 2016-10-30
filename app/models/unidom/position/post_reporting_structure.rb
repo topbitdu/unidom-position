@@ -1,6 +1,6 @@
 # Post Reporting Structure 是岗位汇报结构。
 
-class Unidom::Position::PostReportingStructure < ActiveRecord::Base
+class Unidom::Position::PostReportingStructure < Unidom::Position::ApplicationRecord
 
   self.table_name = 'unidom_post_reporting_structures'
 
