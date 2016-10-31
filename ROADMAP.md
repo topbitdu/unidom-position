@@ -34,3 +34,6 @@
 2. Improve the As Superior Post concern to add the #is_reported_to? method
 3. Improve the As Inferior Post concern for the #report_to! method
 4. Improve the As Inferior Post concern to add the #report_to? method
+
+## v1.4.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.6
