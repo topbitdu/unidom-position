@@ -13,10 +13,6 @@ class CreateUnidomPosts < ActiveRecord::Migration
       t.boolean :part_time, null: false, default: false
       t.boolean :temporary, null: false, default: false
 
-      # t.date :expected_from_date, null: false, default: '1970-01-01'
-      # t.date :expected_thru_date, null: false, default: '3000-01-01'
-      # t.date :actual_from_date,   null: false, default: '1970-01-01'
-      # t.date :actual_thru_date,   null: false, default: '3000-01-01'
       t.datetime :expection_opened_at, null: false, default: Time.utc(1970)
       t.datetime :expection_closed_at, null: false, default: Time.utc(3000)
 
