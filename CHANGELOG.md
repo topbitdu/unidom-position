@@ -2,7 +2,7 @@
 
 ## v0.1
 1. Occupation model & migration (20040201000000)
-2. Position model & migration
+2. Position model & migration (20040211000000)
 3. Post model & migration
 
 ## v0.2
