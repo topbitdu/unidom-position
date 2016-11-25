@@ -6,7 +6,7 @@
 3. Post model & migration (20040212000000)
 
 ## v0.2
-1. Post Reporting Structure model & migration
+1. Post Reporting Structure model & migration (20040221000000)
 2. Improved the Post model to add the #inferior_post_reporting_structures, #superior_post_reporting_structures, #inferior_posts, & #superior_posts associations
 3. Improved the Post model to add the ::report! method
 
