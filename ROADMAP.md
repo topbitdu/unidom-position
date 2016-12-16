@@ -27,7 +27,7 @@
 
 ## v1.3
 1. Improve the As Superior Post concern to add the #``is_reported_to!`` method
-2. Improve the As Inferior Post concern to add the #report_to! method
+2. Improve the As Inferior Post concern to add the #``report_to!`` method
 
 ## v1.4
 1. Improve the As Superior Post concern for the #is_reported_to! method
