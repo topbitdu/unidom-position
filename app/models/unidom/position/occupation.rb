@@ -1,3 +1,4 @@
+##
 # Occupation 是职业。
 
 class Unidom::Position::Occupation < Unidom::Position::ApplicationRecord
