@@ -1,3 +1,4 @@
+##
 # Position 是职位。
 
 class Unidom::Position::Position < Unidom::Position::ApplicationRecord
