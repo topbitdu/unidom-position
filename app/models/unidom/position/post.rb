@@ -1,3 +1,4 @@
+##
 # Post 是岗位。
 
 class Unidom::Position::Post < Unidom::Position::ApplicationRecord
