@@ -1,3 +1,4 @@
+##
 # Post Reporting Structure 是岗位汇报结构。
 
 class Unidom::Position::PostReportingStructure < Unidom::Position::ApplicationRecord
