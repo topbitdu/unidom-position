@@ -1,3 +1,6 @@
+##
+# As Inferior Post 是下级岗位的领域逻辑关注点。
+
 module Unidom::Position::Concerns::AsInferiorPost
 
   extend ActiveSupport::Concern
