@@ -1,3 +1,6 @@
+##
+# As Superior Post 是上级岗位的领域逻辑关注点。
+
 module Unidom::Position::Concerns::AsSuperiorPost
 
   extend ActiveSupport::Concern
