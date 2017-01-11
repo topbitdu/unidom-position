@@ -1,6 +1,8 @@
 # Unidom Position 职位领域模型引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/unidom-position/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/unidom-position.svg)](https://badge.fury.io/rb/unidom-position)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/unidom-position.svg)](https://gemnasium.com/github.com/topbitdu/unidom-position)
 
@@ -69,16 +71,16 @@ include Unidom::Position::Concerns::AsSuperiorPost
 
 ### As Inferior Post
 
-The As Inferior Post concern do the following tasks for the includer automatically:  
-1. Define the has_many :superior_post_reporting_structures macro as: ``has_many :superior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :inferior_post, foreign_key: :inferior_post_id``  
-2. Define the has_many :superior_posts macro as: ``has_many :superior_posts, through: :superior_post_reporting_structures, source: :superior_post``  
-3. Define the #report_to! method as: ``report_to!(superior_post, at: Time.now, primary: true)``  
+The As Inferior Post concern do the following tasks for the includer automatically:
+1. Define the has_many :superior_post_reporting_structures macro as: ``has_many :superior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :inferior_post, foreign_key: :inferior_post_id``
+2. Define the has_many :superior_posts macro as: ``has_many :superior_posts, through: :superior_post_reporting_structures, source: :superior_post``
+3. Define the #report_to! method as: ``report_to!(superior_post, at: Time.now, primary: true)``
 4. Define the #report_to? method as: ``report_to?(superior_post, at: Time.now, primary: true)``
 
 ### As Superior Post
 
-The As Superior Post concern do the following tasks for the includer automatically:  
-1. Define the has_many :inferior_post_reporting_structures macro as: ``has_many :inferior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :superior_post, foreign_key: :superior_post_id``  
-2. Define the has_many :inferior_posts macro as: ``has_many :inferior_posts, through: :inferior_post_reporting_structures, source: :inferior_post``  
-3. Define the #is_reported_to! method as: ``is_reported_to!(by: nil, at: Time.now, primary: true)``  
+The As Superior Post concern do the following tasks for the includer automatically:
+1. Define the has_many :inferior_post_reporting_structures macro as: ``has_many :inferior_post_reporting_structures, class_name: 'Unidom::Position::PostReportingStructure', source: :superior_post, foreign_key: :superior_post_id``
+2. Define the has_many :inferior_posts macro as: ``has_many :inferior_posts, through: :inferior_post_reporting_structures, source: :inferior_post``
+3. Define the #is_reported_to! method as: ``is_reported_to!(by: nil, at: Time.now, primary: true)``
 4. Define the #is_reported_to? method as: ``is_reported_to?(by: nil, at: Time.now, primary: true)``
