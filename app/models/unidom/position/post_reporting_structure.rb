@@ -13,6 +13,10 @@ class Unidom::Position::PostReportingStructure < Unidom::Position::ApplicationRe
   scope :superior_post_is, ->(superior_post) { where superior_post_id: to_id(superior_post) }
   scope :inferior_post_is, ->(inferior_post) { where inferior_post_id: to_id(inferior_post) }
 
+  ##
+  # 建立岗位间的上下级汇报关系。上级岗位是 superior_post ，下级岗位是 inferior_post 。
+  # 主要汇报标志是 elemental ，缺省为 true 。建立时间是 opened_at ，缺省为当前时间。如：
+  # Unidom::Position::PostReportingStructure.report! superior_post: superior_post, inferior_post: inferior_post
   def self.report!(superior_post: nil, inferior_post: nil, elemental: true, opened_at: Time.now)
     raise ArgumentError.new('The superior_post argument is required.') if superior_post.blank?
     raise ArgumentError.new('The inferior_post argument is required.') if inferior_post.blank?
