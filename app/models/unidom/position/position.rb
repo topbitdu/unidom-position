@@ -14,4 +14,4 @@ class Unidom::Position::Position < Unidom::Position::ApplicationRecord
 
   has_many :posts, class_name: 'Unidom::Position::Post'
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Position::Position'
