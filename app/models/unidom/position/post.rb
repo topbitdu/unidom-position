@@ -14,4 +14,4 @@ class Unidom::Position::Post < Unidom::Position::ApplicationRecord
   belongs_to :organization, polymorphic: true
   belongs_to :position,     class_name:  'Unidom::Position::Position'
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Position::Post'
