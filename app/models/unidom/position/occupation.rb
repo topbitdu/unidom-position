@@ -18,4 +18,4 @@ class Unidom::Position::Occupation < Unidom::Position::ApplicationRecord
   scope :scheme_id_is,   ->(scheme_id)   { where scheme_id:   scheme_id   }
   scope :scheme_type_is, ->(scheme_type) { where scheme_type: scheme_type }
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Position::Occupation'
