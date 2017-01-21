@@ -23,4 +23,4 @@ class Unidom::Position::PostReportingStructure < Unidom::Position::ApplicationRe
     self.inferior_post_is(inferior_post).superior_post_is(superior_post).valid_at.alive.first_or_create! elemental: elemental, opened_at: opened_at
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Position::PostReportingStructure'
