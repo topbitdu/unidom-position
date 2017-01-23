@@ -92,3 +92,19 @@ The As Superior Post concern do the following tasks for the includer automatical
 3. Define the #is_reported_to! method as: ``is_reported_to!(by: nil, at: Time.now, primary: true)``
 
 4. Define the #is_reported_to? method as: ``is_reported_to?(by: nil, at: Time.now, primary: true)``
+
+
+
+## Disable the Model & Migration
+
+If you only need the app components other than models, the migrations should be neglected, and the models should not be loaded.
+```ruby
+# config/initializers/unidom.rb
+Unidom::Common.configure do |options|
+
+  options[:neglected_namespaces] = %w{
+    Unidom::Position
+  }
+
+end
+```
