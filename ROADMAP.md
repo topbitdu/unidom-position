@@ -56,3 +56,8 @@
 1. Models RSpec examples manifest
 2. Types RSpec examples manifest
 3. Validators RSpec examples manifest
+
+## v1.5.1
+1. Improve the Occupation spec for the validations on the #name attribute
+2. Improve the Position spec for the validations on the #name attribute
+3. Improve the Post spec for the validations on the #name attribute
