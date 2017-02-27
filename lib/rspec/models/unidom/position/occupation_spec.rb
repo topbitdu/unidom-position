@@ -30,6 +30,20 @@ describe Unidom::Position::Occupation, type: :model do
       { name: 'A'*name_max_length     } => 0,
       { name: 'A'*(name_max_length+1) } => 1
 
+    position_1_attributes = {
+      organization_id:   SecureRandom.uuid,
+      organization_type: 'Unidom::Position::Organization::Mock',
+      name:              'Some Position #1'
+    }
+
+    position_2_attributes = {
+      organization_id:   SecureRandom.uuid,
+      organization_type: 'Unidom::Position::Organization::Mock',
+      name:              'Some Position #2'
+    }
+
+    it_behaves_like 'has_many', model_attributes, :positions, Unidom::Position::Position, [ position_1_attributes, position_2_attributes ]
+
   end
 
 end
