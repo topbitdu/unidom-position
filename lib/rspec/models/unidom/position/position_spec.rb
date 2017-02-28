@@ -30,6 +30,15 @@ describe Unidom::Position::Position, type: :model do
       { name: 'A'*name_max_length     } => 0,
       { name: 'A'*(name_max_length+1) } => 1
 
+    occupation_attributes = {
+      scheme_id:   SecureRandom.uuid,
+      scheme_type: 'Unidom::Position::Scheme::Mock',
+      code:        '5-1-99',
+      name:        'Some Occupation'
+    }
+
+    it_behaves_like 'belongs_to', model_attributes, :occupation, Unidom::Position::Occupation, occupation_attributes
+
   end
 
 end
