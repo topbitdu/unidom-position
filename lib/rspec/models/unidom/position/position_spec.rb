@@ -39,6 +39,22 @@ describe Unidom::Position::Position, type: :model do
 
     it_behaves_like 'belongs_to', model_attributes, :occupation, Unidom::Position::Occupation, occupation_attributes
 
+    post_1_attributes = {
+      organization_id:   SecureRandom.uuid,
+      organization_type: 'Unidom::Position::Organization::Mock',
+      #position_id:       SecureRandom.uuid,
+      name:              'Some Post #1'
+    }
+
+    post_2_attributes = {
+      organization_id:   SecureRandom.uuid,
+      organization_type: 'Unidom::Position::Organization::Mock',
+      #position_id:       SecureRandom.uuid,
+      name:              'Some Post #2'
+    }
+
+    it_behaves_like 'has_many', model_attributes, :posts, Unidom::Position::Post, [ post_1_attributes, post_2_attributes ]
+
   end
 
 end
