@@ -69,3 +69,8 @@
 ## v1.5.3
 1. Improve the Occupation spec for the scheme_id_is scope, & the scheme_type_is scope
 2. Improve the Position spec for the ``has_many :posts, class_name: 'Unidom::Position::Post'`` macro
+
+## v1.5.4
+1. Improve the Occupation spec for the validations on the #``name`` attribute
+2. Improve the Position spec for the validations on the #``name`` attribute
+3. Improve the Post spec for the validations on the #``name`` attribute
