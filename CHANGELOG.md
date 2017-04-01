@@ -78,3 +78,7 @@
 ## v1.5.5
 1. Improve the Post spec for the ``belongs_to :position, class_name: 'Unidom::Position::Position'`` macro
 2. Improve the Post Reporting Structure spec for the ``belongs_to :superior_post, class_name: 'Unidom::Position::Post', foreign_key: :superior_post_id`` macro, & the ``belongs_to :inferior_post, class_name: 'Unidom::Position::Post', foreign_key: :inferior_post_id`` macro
+
+## v1.5.6
+1. Improve the Position model for the occupation_is scope
+2. Improve the Position spec for the occupation_is scope
