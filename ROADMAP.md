@@ -82,3 +82,7 @@
 ## v1.5.6
 1. Improve the Position model for the occupation_is scope
 2. Improve the Position spec for the occupation_is scope
+
+## v1.5.7
+1. Improve the Post Reporting Structure spec for the superior_post_is scope, & the inferior_post_is scope
+2. RSpec shared examples manifest
