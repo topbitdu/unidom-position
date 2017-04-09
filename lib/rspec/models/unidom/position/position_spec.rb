@@ -17,7 +17,8 @@ describe Unidom::Position::Position, type: :model do
 
     it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
 
-    it_behaves_like 'validates text', model_attributes, :name, length: 2..described_class.columns_hash['name'].limit
+    it_behaves_like 'validates text', model_attributes, :name,
+      length: 2..described_class.columns_hash['name'].limit
 
     occupation_attributes = {
       scheme_id:   SecureRandom.uuid,
