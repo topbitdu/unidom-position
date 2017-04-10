@@ -25,6 +25,9 @@ describe Unidom::Position::PostReportingStructure, type: :model do
     it_behaves_like 'belongs_to', model_attributes, :superior_post, Unidom::Position::Post, post_attributes
     it_behaves_like 'belongs_to', model_attributes, :inferior_post, Unidom::Position::Post, post_attributes
 
+    it_behaves_like 'monomorphic scope', model_attributes, :superior_post_is, :superior_post
+    it_behaves_like 'monomorphic scope', model_attributes, :inferior_post_is, :inferior_post
+
   end
 
 end
