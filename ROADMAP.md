@@ -86,3 +86,7 @@
 ## v1.5.7
 1. Improve the Post Reporting Structure spec for the superior_post_is scope, & the inferior_post_is scope
 2. RSpec shared examples manifest
+
+## v1.5.8
+1. Improve the As Inferior Post concern for the argument validations of the #report_to! method
+1. Improve the As Superior Post concern for the argument validations of the #is_reported_to! method
