@@ -89,4 +89,4 @@
 
 ## v1.5.8
 1. Improve the As Inferior Post concern for the argument validations of the #report_to! method
-1. Improve the As Superior Post concern for the argument validations of the #is_reported_to! method
+2. Improve the As Superior Post concern for the argument validations of the #is_reported_to! method
