@@ -3,7 +3,8 @@
 
 module Unidom::Position::Concerns::AsInferiorPost
 
-  extend ActiveSupport::Concern
+  extend  ActiveSupport::Concern
+  include Unidom::Common::Concerns::ArgumentValidation
 
   included do |includer|
 
@@ -15,6 +16,9 @@ module Unidom::Position::Concerns::AsInferiorPost
     # 主要汇报标志是 primary ，缺省为 true 。建立时间是 at ，缺省为当前时间。如：
     # rails_developer.report_to! project_manager, primary: false
     def report_to!(superior_post, at: Time.now, primary: true)
+
+      assert_present! :superior_post, superior_post
+
       superior_post_reporting_structures.superior_post_is(superior_post).valid_at(now: at).alive.first_or_create! elemental: primary, opened_at: at
     end
 
