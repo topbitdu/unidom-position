@@ -67,7 +67,7 @@
 2. Improved the Position spec for the ``belongs_to :occupation, class_name: 'Unidom::Position::Occupation'`` macro
 
 ## v1.5.3
-1. Improve the Occupation spec for the scheme_id_is scope, & the scheme_type_is scope
+1. Improved the Occupation spec for the scheme_id_is scope, & the scheme_type_is scope
 2. Improve the Position spec for the ``has_many :posts, class_name: 'Unidom::Position::Post'`` macro
 
 ## v1.5.4
