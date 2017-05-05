@@ -15,7 +15,7 @@
 
 ## v1.1
 1. Rake task unidom:position:occupation:import
-2. Improved the Occupation model to add the ``scheme_is`` scope, #scheme_id_is, & #scheme_type_is scopes
+2. Improved the Occupation model to add the ``scheme_is`` scope, the #``scheme_id_is`` scope, & #scheme_type_is scopes
 
 ## v1.2
 1. As Superior Post concern
