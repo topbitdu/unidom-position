@@ -73,7 +73,7 @@
 ## v1.5.4
 1. Improved the Occupation spec for the validations on the #``name`` attribute
 2. Improved the Position spec for the validations on the #``name`` attribute
-3. Improve the Post spec for the validations on the #``name`` attribute
+3. Improved the Post spec for the validations on the #``name`` attribute
 
 ## v1.5.5
 1. Improve the Post spec for the ``belongs_to :position, class_name: 'Unidom::Position::Position'`` macro
