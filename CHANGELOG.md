@@ -90,3 +90,7 @@
 ## v1.5.8
 1. Improve the As Inferior Post concern for the argument validations of the #report_to! method
 2. Improve the As Superior Post concern for the argument validations of the #is_reported_to! method
+
+## v1.5.9
+1. Improve the Ruby Gem Specification to depend on unidom-common v1.10
+2. Improve the Occupation migration, the Position migration, the Post migration, & the Post Reporting Structure migration for the #opened_at column, & the #closed_at column
